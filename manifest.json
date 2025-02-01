@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "InstaIntel",
+    "version": "1.0",
+    "description": "Get insights into Instagram profiles with a side panel.",
+    "permissions": ["sidePanel", "tabs", "storage", "activeTab", "scripting"],
+    "host_permissions": ["https://www.instagram.com/*"],
+    "action": {
+      "default_title": "Open InstaIntel"
+    },
+    "side_panel": {
+      "default_path": "sidepanel.html",
+      "openPanelOnActionClick": true
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
+  
